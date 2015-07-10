@@ -1,4 +1,4 @@
-var has = require('tarruda/has');
+var has = require('littlstar/has@master');
 var isarray = require('juliangruber/isarray');
 
 var VERSION = '1.0.0';
