@@ -1,5 +1,5 @@
-var has = require('has');
-var isarray = require('isarray');
+var has = require('tarruda/has');
+var isarray = require('juliangruber/isarray');
 
 var VERSION = '1.0.0';
 
