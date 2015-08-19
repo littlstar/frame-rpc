@@ -1,5 +1,6 @@
 var has = require('littlstar/has@master');
 var isarray = require('juliangruber/isarray');
+var url = require('component/url');
 
 var VERSION = '1.0.0';
 
@@ -15,7 +16,7 @@ function RPC (src, dst, origin, methods) {
         this.origin = '*';
     }
     else {
-        var uorigin = new URL(origin);
+        var uorigin = url.parse(origin);
         this.origin = uorigin.protocol + '//' + uorigin.host;
     }
     
